@@ -1,0 +1,10 @@
+apiVersion: v1
+name: techtrends
+description: techtrends project using kubernetes/helm 
+keywords:
+- python
+- techtrends 
+version: 3.7.0
+maintainers:
+- name: AmrAnwar 
+  email: amranwar945@gmail.com
