@@ -37,6 +37,6 @@ spec:
                           cpu: {{ .Values.resources.requests.CPU }}
                           memory: {{ .Values.resources.requests.memory }}
                       limits:
-                          cpu: {{ .Values.resources.limits.CPUf }}
+                          cpu: {{ .Values.resources.limits.CPU }}
                           memory: {{ .Values.resources.limits.memory }}
 status: {}
