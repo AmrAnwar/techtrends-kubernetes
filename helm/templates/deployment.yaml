@@ -24,12 +24,12 @@ spec:
                   imagePullPolicy: {{ .Values.image.pullPolicy }}
                   readinessProbe:
                       httpGet:
-                          path: {{ .Values.readinessProbePath }}
-                          port: {{ .Values.containerPort }}
+                          path: {{ .Values.readinessProbe.path }}
+                          port: {{ .Values.readinessProbe.port }}
                   livenessProbe:
                       httpGet: 
-                          path: {{ .Values.livenessProbePath }}
-                          port: {{ .Values.containerPort }}
+                          path: {{ .Values.livenessProbe.path }}
+                          port: {{ .Values.livenessProbe.port }}
                   ports:
                       - containerPort: {{ .Values.containerPort }}
                   resources:
